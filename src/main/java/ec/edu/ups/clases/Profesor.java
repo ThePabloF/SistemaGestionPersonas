@@ -8,6 +8,8 @@ public class Profesor extends Persona {
     List<String> areaEspecializacion;
     public Profesor(String cedula, String nombre, String apellido, String telefono, String correoElectronico ) {
         super(cedula, nombre, apellido, telefono, correoElectronico);
+        this.titulosAcademico = new ArrayList<String>();
+        this.areaEspecializacion = new ArrayList<String>();
 
     }
     public Profesor() {
@@ -28,5 +30,12 @@ public class Profesor extends Persona {
         return areaEspecializacion;
     }
 
-
+    @Override
+    public String toString() {
+        return super.toString() + "\n" +
+                "Profesor {\n" +
+                "\tTítulos Académicos: " + titulosAcademico + "\n" +
+                "\tÁrea de Especialización: " + areaEspecializacion + "\n" +
+                "}";
+    }
 }

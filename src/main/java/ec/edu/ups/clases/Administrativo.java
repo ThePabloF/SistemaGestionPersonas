@@ -9,6 +9,8 @@ public class Administrativo extends Persona {
 
     public Administrativo(String cedula, String nombre, String apellido, String telefono, String correoElectronico) {
         super(cedula,nombre,apellido,telefono,correoElectronico);
+        cargos = new ArrayList<String>();
+        responsabilidades = new ArrayList<String>();
 
     }
     public Administrativo() {

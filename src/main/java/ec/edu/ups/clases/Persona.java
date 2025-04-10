@@ -22,10 +22,10 @@ public class Persona {
         this.direcciones = new ArrayList<Direccion>();
 
     }
-    public Persona(){
+
+    public Persona() {
         this.direcciones = new ArrayList<Direccion>();
     }
-
 
 
     public String getApellido() {
@@ -69,23 +69,24 @@ public class Persona {
     }
 
 
-    public void addDireccion(Direccion direccion){
+    public void addDireccion(Direccion direccion, String callePrincipal, String calleSecundaria, String numCasa, String pais, String provincia, String ciudad) {
         direcciones.add(direccion);
 
     }
+
     public List<Direccion> getDirecciones() {
         return direcciones;
     }
 
     @Override
     public String toString() {
-        return "Persona{" +
-                "cedula='" + cedula + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", telefono='" + telefono + '\'' +
-                ", correoElectronico='" + correoElectronico + '\'' +
-                ", direcciones=" + direcciones +
-                '}';
+        return "Persona {\n" +
+                "\tCédula: '" + cedula + "'\n" +
+                "\tNombre: '" + nombre + "'\n" +
+                "\tApellido: '" + apellido + "'\n" +
+                "\tTeléfono: '" + telefono + "'\n" +
+                "\tCorreo Electrónico: '" + correoElectronico + "'\n" +
+                "\tDirecciones: " + direcciones + "\n" +
+                "}";
     }
 }
