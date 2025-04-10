@@ -65,7 +65,7 @@ public class Principal {
         System.out.println("Personas Asociadas: ");
         System.out.println("ESTUDIANTE: "+estudiante.toString());
         System.out.println("PROFESOR: "+profesor.toString());
-        System.out.println("INSTITUCION 2:");
+        System.out.println("INSTITUCION 2:"+"");
         System.out.println(institucion2.toString());
         System.out.println("VISITANTE: "+visitante.toString());
         System.out.println("ADMINISTRATIVO: "+administrativo.toString());
